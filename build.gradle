@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'idea'
+
+}
+
+group 'PruebaAPI'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility=1.8
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    testImplementation group: 'com.intuit.karate', name: 'karate-junit4', version: '0.8.0'
+    testImplementation group: 'com.intuit.karate', name: 'karate-apache', version: '0.8.0'
+
+
+}
+
+test {
+    useJUnitPlatform()
+}
